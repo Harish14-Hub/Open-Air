@@ -6,8 +6,13 @@ from playwright.sync_api import sync_playwright
 # TELEGRAM CONFIG
 # ==========================================
 
-BOT_TOKEN = "8729670895:AAEoUK39d4VG_hyhpWiIprt-RZs3smsi16w"
-CHAT_ID = "7404337836"
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+BOT_TOKEN = os.getenv("WEB_BOT_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 
 BASE_URL = f"https://api.telegram.org/bot{BOT_TOKEN}"
 
