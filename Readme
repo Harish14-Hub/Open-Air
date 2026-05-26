@@ -1,0 +1,305 @@
+# Open Air 😈🔥
+
+Open Air is an AI-powered remote desktop and browser automation system that allows users to control their computer remotely using Telegram commands.
+
+---
+
+# Features 🚀
+
+- Remote desktop control
+- Browser automation
+- Telegram AI assistant
+- Open folders remotely
+- Download files from PC
+- YouTube automation
+- Google search automation
+- AI-powered workflows
+- Local AI support (Ollama / Phi3)
+
+---
+
+# Tech Stack 🛠
+
+- Python
+- Telegram Bot API
+- Playwright
+- Ollama
+- Phi3
+- dotenv
+
+---
+
+# Installation ⚡
+
+## 1. Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/open-air.git
+cd open-air
+```
+
+---
+
+## 2. Create Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+---
+
+## 3. Activate Virtual Environment
+
+### Windows
+
+```bash
+.venv\Scripts\activate.bat
+```
+
+---
+
+## 4. Install Requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# Telegram Bot Setup 🤖
+
+## 1. Open Telegram
+
+Search:
+
+```txt
+@BotFather
+```
+
+---
+
+## 2. Create New Bot
+
+Send:
+
+```txt
+/newbot
+```
+
+Then:
+
+- Enter bot name
+- Enter bot username
+
+BotFather will give:
+
+```txt
+BOT TOKEN
+```
+
+---
+
+# 3. Get Telegram Chat ID 🔑
+
+## Method 1 — Direct URL 😎
+
+Open this URL in browser:
+
+```txt
+https://api.telegram.org/botYOUR_BOT_TOKEN/getUpdates
+```
+
+Replace:
+
+```txt
+YOUR_BOT_TOKEN
+```
+
+with your real bot token.
+
+---
+
+# Example 🔥
+
+```txt
+https://api.telegram.org/bot123456:ABCXYZ/getUpdates
+```
+
+---
+
+# IMPORTANT ⚠️
+
+Before opening URL:
+
+1. Open your bot in Telegram
+2. Send:
+
+```txt
+hi
+```
+
+to your bot.
+
+Then open URL 😈
+
+---
+
+# OUTPUT 😎
+
+You will see:
+
+```json
+{
+  "ok": true,
+  "result": [
+    {
+      "message": {
+        "chat": {
+          "id": 123456789
+        }
+      }
+    }
+  ]
+}
+```
+
+---
+
+# COPY THIS 😈
+
+```txt
+123456789
+```
+
+That is your:
+
+```txt
+CHAT_ID
+```
+
+---
+
+# Add To `.env` 🔥
+
+```env
+WEB_BOT_TOKEN=your_browser_bot_token
+FILE_BOT_TOKEN=your_file_manager_bot_token
+CHAT_ID=123456789
+```
+
+# Environment Variables 🔐
+
+Create:
+
+```txt
+.env
+```
+
+Inside project folder.
+
+Add:
+
+```env
+WEB_BOT_TOKEN=your_browser_bot_token
+FILE_BOT_TOKEN=your_file_manager_bot_token
+CHAT_ID=your_chat_id
+```
+
+---
+
+# Run Browser AI Agent 🌐
+
+```bash
+python telegram_agent.py
+```
+
+---
+
+# Run File Manager Agent 📂
+
+```bash
+python telegram_file_manager.py
+```
+
+---
+
+# Example Commands 😎
+
+## Browser Agent
+
+```txt
+open youtube
+```
+
+```txt
+play believer song
+```
+
+```txt
+weather in chennai
+```
+
+---
+
+## File Manager Agent
+
+```txt
+open home
+```
+
+```txt
+desktop
+```
+
+```txt
+downloads
+```
+
+---
+
+# Future Features 🔥
+
+- Voice control
+- Screenshot capture
+- Webcam access
+- AI memory
+- Autonomous workflows
+- Multi-agent system
+- Full desktop automation
+
+---
+
+# Security ⚠️
+
+Never upload:
+
+- `.env`
+- Bot Tokens
+- API Keys
+
+Create:
+
+```txt
+.gitignore
+```
+
+Add:
+
+```txt
+.env
+.venv/
+venv/
+__pycache__/
+```
+
+---
+
+# Vision 🌍
+
+Open Air aims to become an AI-powered remote operating system capable of controlling browsers, desktops, workflows, and applications using natural language commands.
+
+---
+
+# License 📜
+
+MIT License
